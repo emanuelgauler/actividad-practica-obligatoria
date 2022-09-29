@@ -8,53 +8,59 @@
    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-dark">
    <header class="bg-light">
       <div class="container mt-2 border-top pt-2 pb-2">
          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none" href="#">
                Codo a codo
             </a>
-         <div>
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                <li class="nav-item"><a class="nav-link active link-dark" href="#">Inicio</a></li>
                <li class="nav-item"><a class="nav-link link text-opacity-50 link-dark" href="#">Link</a></li>
                <li class="nav-item"><a class="nav-link disabled" href="#">Desactivado</a></li>
             </ul>
-         </div>
 
-         <div class="">
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="#">
                <input type="text" name="Buscar" id="Buscar" placeholder="Buscar" />
-               <input type="button" value="Buscar" />
             </form>
-         </div>
+            <div class="text-end">
+               <button type="button" class="btn border border-success" >Buscar</button>
+            </div>
          </div>
       </div>
    </header>
 
-   <main>
-      <div>
-         <img src="" alt="imagen HTML 5">
-         <p>Título 1</p>
-         <p>Contenido de Card</p>
-         <p>Ultima actulización</p>
-      </div>
-      <div>
-         <img src="" alt="imagen CSS 3">
-         <p>Título 2</p>
-         <p>Contenido de Card</p>
-         <p>Ultima actulización</p>
-      </div>
-      <div>
-         <img src="" alt="imagen Bootstrap">
-         <p>Título 3</p>
-         <p>Contenido de Card</p>
-         <p>Ultima actulización</p>
+   <main class="container bg-light pb-3 pt-1">
+      <div class="row align-items-center justify-content-around">
+         <div class="card col-4" style="width: 18rem;">
+            <img src="images/HTML5_Logo_128.png" class="card-img-top" alt="Logo HTML5" />
+            <div class="card-body">
+               <h5 class="card-title">Título 1 title</h5>
+               <p class="card-text">Contenido de Card</p>
+               <p class="card-footer text-muted">Última actulización</p>
+            </div>
+         </div>
+         <div class="card col-4" style="width: 18rem;">
+            <img src="" alt="Imagen CSS 3" class="card-img-top">
+            <div>
+               <h5 class="card-title">Título 2</h5>
+               <p class="card-text">Contenido de Card</p>
+               <p class="card-footer text-muted">Ultima actulización</p>
+            </div>
+         </div>
+         <div class="card col-4" style="width: 18rem;">
+            <img src="" alt="Imagen Bootstrap 5" class="card-img-top">
+            <div>
+               <h5 class="card-title">Título 3</h5>
+               <p class="card-text">Contenido de Card</p>
+               <p class="card-footer text-muted">Ultima actulización</p>
+            </div>
+         </div>
       </div>
    </main>
 
-   <footer>
+   <footer class="container bg-light m">
       <div class="container">
          <form action="">
             <label for="">Email</label>
